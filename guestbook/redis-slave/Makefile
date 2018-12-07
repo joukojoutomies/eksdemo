@@ -13,8 +13,8 @@
 # limitations under the License.
 
 TAG = v3
-REGISTRY = gcr.io/google-samples
-ARCH ?= $(shell go env GOARCH)
+REGISTRY = docker.io/lindstedt
+ARCH = amd64
 ALL_ARCH = amd64 arm arm64 ppc64le
 
 IMAGE = $(REGISTRY)/gb-redisslave

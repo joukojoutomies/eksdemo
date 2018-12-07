@@ -13,8 +13,8 @@
 # limitations under the License.
 
 TAG = v6
-REGISTRY = gcr.io/google-samples
-ARCH ?= $(shell go env GOARCH)
+REGISTRY = idocker.io/lindstedt
+ARCH =amd64
 ALL_ARCH = amd64 arm arm64 ppc64le
 
 QEMUVERSION=v2.7.0
