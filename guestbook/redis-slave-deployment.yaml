@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: slave
-        image: gcr.io/google_samples/gb-redisslave:v1
+        image: docker.io/lindstedt/gb-redisslave-amd64:v3
         resources:
           requests:
             cpu: 100m
