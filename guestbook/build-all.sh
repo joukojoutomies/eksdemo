@@ -1,4 +1,4 @@
-## Building the Docker images
+# Building the Docker images
 docker build -t docker.io/lindstedt/gb-frontend:v5 php-redis
 docker build -t docker.io/lindstedt/gb-redisslave:v2 redis-slave
 make -C php-redis
