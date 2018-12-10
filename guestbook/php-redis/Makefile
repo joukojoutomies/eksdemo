@@ -13,7 +13,7 @@
 # limitations under the License.
 
 TAG = v6
-REGISTRY = idocker.io/lindstedt
+REGISTRY = docker.io/lindstedt
 ARCH =amd64
 ALL_ARCH = amd64 arm arm64 ppc64le
 
