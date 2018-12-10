@@ -17,7 +17,8 @@
 # Usage:
 #   [VERSION=v3] [REGISTRY="staging-k8s.gcr.io"] make build
 VERSION?=v3
-REGISTRY?=staging-k8s.gcr.io
+#REGISTRY?=staging-k8s.gcr.io
+REGISTRY=docker.io/lindstedt
 
 release: clean build push clean
 
@@ -27,7 +28,7 @@ build:
 
 # push the image to an registry
 push:
-	gcloud docker -- push ${REGISTRY}/guestbook:${VERSION}
+	docker push ${REGISTRY}/guestbook:${VERSION}
 
 # remove previous images and containers
 clean:
