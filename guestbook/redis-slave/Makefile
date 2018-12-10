@@ -15,7 +15,7 @@
 TAG = v3
 REGISTRY = docker.io/lindstedt
 ARCH = amd64
-ALL_ARCH = amd64 arm arm64 ppc64le
+ALL_ARCH = amd64 
 
 IMAGE = $(REGISTRY)/gb-redisslave
 MULTI_ARCH_IMG = $(IMAGE)-$(ARCH)
