@@ -1,22 +1,20 @@
 apiVersion: apps/v1 #  for k8s versions before 1.9.0 use apps/v1beta2  and before 1.8.0 use extensions/v1beta1
 kind: Deployment
 metadata:
-  name: mule-hello
+  name: mule-hello-deployment
 spec:
   selector:
     matchLabels:
       app: mule-hello
-      tier: frontend
   replicas: 3
   template:
     metadata:
       labels:
         app: mule-hello
-        tier: frontend
     spec:
       containers:
       - name: mule-hello
-        image: docker.io/lindstedt/mule-hello:1
+        image: docker.io/lindstedt/mule-hello:2 
         resources:
           requests:
             cpu: 100m
