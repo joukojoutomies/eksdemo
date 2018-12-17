@@ -8,6 +8,7 @@ require 'Predis/Autoloader.php';
 Predis\Autoloader::register();
 
 if (isset($_GET['cmd']) === true) {
+  $jenkinshost='jenkins'
   $host = 'redis-master';
   if (getenv('GET_HOSTS_FROM') == 'env') {
     $host = getenv('REDIS_MASTER_SERVICE_HOST');
@@ -35,6 +36,7 @@ if (isset($_GET['cmd']) === true) {
 
     $value = $client->get($_GET['key']);
     print('{"data": "' . $value . '"}');
+    print('("jenkins": "' .$jenkins .'")');
   }
 } else {
   phpinfo();

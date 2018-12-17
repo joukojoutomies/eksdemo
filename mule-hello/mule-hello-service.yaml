@@ -12,7 +12,8 @@ spec:
   # an external load-balanced IP for the frontend service.
   type: LoadBalancer
   ports:
-  - port: 8081
+  - Port:8081
+    targetPort: 8081
   selector:
     app: mule-hello
     tier: frontend
