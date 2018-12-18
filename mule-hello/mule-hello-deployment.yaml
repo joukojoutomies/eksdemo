@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mule-hello
-        image: docker.io/lindstedt/mule-hello:2 
+        image: docker.io/lindstedt/mule-hello:3 
         resources:
           requests:
             cpu: 100m
