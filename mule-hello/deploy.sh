@@ -1,3 +1,3 @@
 kubectl apply -f mule-hello-deployment.yaml
-kubectl apply -f mule-hello-service.haml
+kubectl apply -f mule-hello-service.yaml
 
