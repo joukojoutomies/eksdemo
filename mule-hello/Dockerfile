@@ -1,5 +1,6 @@
 FROM centos:7
 
+USER root
 RUN yum -y install java-1.8.0 && yum -y install firewalld && yum -y install curl && yum -y install telnet && yum -y install net-tools && yum -y update
 RUN useradd mule 
 COPY src/mule/ /opt/mule/
